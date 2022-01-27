@@ -4,7 +4,12 @@
         $(document).ready(function(){
 
 
-     setInterval(function(){ $.get("/database_refresh.php",function(data){document.getElementById("field").innerHTML=data;console.log(data)})},2000)
+     setInterval(
+           function(){ 
+                 $.get("/database_refresh.php",
+                     function(data){
+                         document.getElementById("field").innerHTML=data;
+              console.log(data)})},2000)
 
 
               }
