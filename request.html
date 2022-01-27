@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<script src="/jquery.js"></script>
+<script>
+        $(document).ready(function(){
+
+
+     setInterval(function(){ $.get("/database_refresh.php",function(data){document.getElementById("field").innerHTML=data;console.log(data)})},2000)
+
+
+              }
+
+
+
+
+)
+
+</script>
+<div id="field"></div>
